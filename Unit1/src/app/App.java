@@ -6,35 +6,41 @@ public class App {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("What is 2 x 4?");
-        String math = input.nextLine();
-        if (math.equals("8")){
-            System.out.println("Correct!");
-        }
-        else {
-            System.out.println("Incorrect");
-        }
+        System.out.println("Please enter a name");
+        String name1 = input.nextLine();
 
-        System.out.println("Who wrote 'Gulliver's Travels'?");
-        String lit = input.nextLine();
-        if (lit.equals("Jonathan Swift")){
-            System.out.println("Correct!");
-        }
-        else{
-            System.out.println("Incorrect");
-        }
+        System.out.println("Please enter a 2nd name");
+        String name2 = input.nextLine();
 
-        System.out.println("Who started the Protestant Revolution by famously nailing 95 theses to a church door?");
-        String hist = input.nextLine();
-        if (hist.equals("Martin Luther")){
-            System.out.println("Correct!");
-        }
-        else{
-            System.out.println("Incorrect");
-        }
+        System.out.println("Please enter a 3rd name");
+        String name3 = input.nextLine();
 
+        System.out.println("Please enter an adjective");
+        String adj1 = input.nextLine();
 
-        }
-        
+        System.out.println("Please enter a 2nd adjective");
+        String adj2 = input.nextLine();
 
+        System.out.println("Please enter a 3rd adjective");
+        String adj3 = input.nextLine();
+
+        System.out.println("Please enter a noun");
+        String noun1 = input.nextLine();
+
+        System.out.println("Please enter a 2nd noun");
+        String noun2 = input.nextLine();
+
+        System.out.println("Please enter a 3rd noun");
+        String noun3 = input.nextLine();
+
+        System.out.println("Please enter a place");
+        String place = input.nextLine();
+
+        System.out.println("Please enter an action");
+        String action = input.nextLine();
+
+        System.out.println(name1 + " was a little " + adj1 + " " + noun1 + ". One day, they traveled to the " + place + " to " + action + " with their friends. " + name1 + "'s friends were " + name2 + ", a " + adj2 + " " + noun2 + ", and " + name3 + ", a " + adj3 + " " + noun3 + ". After they were done, " + name1 + ", " + name2 + ", and " + name3 + " said goodbye and went home.");
     }
+}
+
+
