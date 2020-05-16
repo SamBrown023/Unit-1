@@ -4,32 +4,26 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Scanner input = new Scanner(System.in);
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog dog3 = new Dog();
+        
+        dog1.name = "Tigger";
+        dog1.breed = "boarder collie mix";
+        dog1.age = 5;
 
-        System.out.println("Please enter 1st number");
-        int numb1 = input.nextInt();
+        dog2.name = "Ringo";
+        dog2.breed = "boxer red heeler mix";
+        dog2.age = 10;
 
-        System.out.println("Please enter 2nd number");
-        int numb2 = input.nextInt();
+        dog3.name = "Stamps";
+        dog3.breed = "corgi";
+        dog3.age = 3;
 
-        System.out.println("Please enter 1 to add, 2 to subtract, 3 to multiply, and 4 to divide");
-        int func = input.nextInt();
+        System.out.println("Dog 1 is named " + (dog1.name) + ". He is a " + (dog1.breed) + " and is " + dog1.age + " years old.");
+        System.out.println("Dog 2 is named " + (dog2.name) + ". He is a " + (dog2.breed) + " and is " + dog2.age + " years old.");
+        System.out.println("Dog 3 is named " + (dog3.name) + ". He is a " + (dog3.breed) + " and is " + dog3.age + " years old.");
 
-        if (func == (1)){
-            System.out.println(numb1+numb2);
-        }
-
-        if (func == (2)){
-            System.out.println(numb1-numb2);
-        }
-
-        if (func == (3)){
-            System.out.println(numb1*numb2);
-        }
-
-        if (func == (4)){
-            System.out.println(numb1/numb2);
-        }
 }
 }
 
